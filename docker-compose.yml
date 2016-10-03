@@ -1,0 +1,30 @@
+---
+elasticsearch:
+  build: elasticsearch
+  ports:
+    - "9200:9200"
+
+fluentd:
+  build: fluentd
+  ports:
+    - "8888:8888"
+  links:
+    - elasticsearch:elasticsearch
+  volumes:
+   - ./fluentd:/work
+  volumes_from:
+    - httpd
+
+kibana:
+  build: kibana
+  ports:
+    - "5601:5601"
+  links:
+    - elasticsearch:elasticsearch
+
+httpd:
+  build: httpd
+  ports:
+    - "80:80"
+  volumes:
+    - ./httpd/log:/var/log/apache2

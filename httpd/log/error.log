@@ -1,0 +1,5 @@
+[Mon Oct 03 11:36:15.654569 2016] [mpm_event:notice] [pid 30:tid 140088610035584] AH00489: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Mon Oct 03 11:36:15.655804 2016] [core:notice] [pid 30:tid 140088610035584] AH00094: Command line: '/usr/sbin/apache2'
+[Mon Oct 03 11:43:14.191971 2016] [core:warn] [pid 24:tid 139879688927104] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Oct 03 11:43:14.193583 2016] [mpm_event:notice] [pid 24:tid 139879688927104] AH00489: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Mon Oct 03 11:43:14.194369 2016] [core:notice] [pid 24:tid 139879688927104] AH00094: Command line: '/usr/sbin/apache2'
